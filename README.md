@@ -9,7 +9,8 @@ PANIC Button using AWS IoT button and IFTTT which can trigger and make a call
     
 # Register your AWS IoT Button using App
    ### Download and Install AWS button dev app 
-        This application is not available in india, So if you need this you should download it from the internet as sdk
+        * This application is not available in india, So if you need this you should download it from the internet as sdk(for            indians only)
+        
 # Create Two Lambda Functions From App
 
 # Create an IFTTT account
