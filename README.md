@@ -40,12 +40,11 @@ PANIC Button using AWS IoT button and IFTTT which can trigger and make a call (N
 
         You need Two lambda Function to make this button
         Select the two lamdbda Functions named below from the list in Application.
-            1. iotbutton_G030JF059346NHUH_iot-button-ifttt-maker-nodejs
-            2. iotbutton_G030JF059346NHUH_iot-button-sms-nodejs
+            1.  iotbutton_G030JF059346NHUH_iot-button-sms-nodejs
+            2.  iotbutton_G030JF059346NHUH_iot-button-ifttt-maker-nodejs
    
-   Now Using a System.
-         1) Replace 1st one with smsCode.js
-         2) Replace 2nd one with iftttLambda.js
+   ### Now Using a System.
+         1) Replace 1st one with smsCode.js and 2nd one with iftttLambda.js
          
          *** Select the same region in your mobile App for your AWS location ***
 # Create an IFTTT account
@@ -63,12 +62,23 @@ PANIC Button using AWS IoT button and IFTTT which can trigger and make a call (N
         
         7. Copy the URL from Documentaion by and edit your maker event to yours.
         
-        8. Use this in your IFTTTLambda.js to edit
+        8. Use this in your IFTTTLambda.js to edit.
         
 # Adding the right policies
+
+        Here We are invoking the iotbutton_G030JF059346NHUH_iot-button-ifttt-maker-nodejs from 
+        iotbutton_G030JF059346NHUH_iot-button-sms-nodejs.
         
+        So we have to add the right policies to iotbutton_G030JF059346NHUH_iot-button-sms-nodejs.
         
+        1. Go to the IAM console in AWS
+        2. Go to ROLES section
+        3. Choose the role iotbutton_G030JF059346NHUH_iot-button-sms-nodejs.
+        4. Add the policy AWSLambdaRole
+                AWSLambdaRole will enable the lambda function with power to
+                invoke other lambda function
 
 # Test your device
-
+         Now you can test your device by connecting to a wifi or
+         using the test option in your AWS console.
 
