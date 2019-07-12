@@ -12,11 +12,12 @@ PANIC Button using AWS IoT button and IFTTT which can trigger and make a call (N
      indians only)
    ### Download and Install AWS button dev app 
    
-       You can manually also register the button but through the app seems more easy.
+   You can manually also register the button but through the app seems more easy.
+           
            1. Download the App AWS IoT button Dev app from the Play Store.
            
            2. Register your Device by following the steps in the App itself.
-           
+            
            3. The serial number will be given in the backside of the device 
               starting with G030 use that for registering.
               
