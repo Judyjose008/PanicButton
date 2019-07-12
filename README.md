@@ -44,8 +44,8 @@ PANIC Button using AWS IoT button and IFTTT which can trigger and make a call (N
             2. iotbutton_G030JF059346NHUH_iot-button-sms-nodejs
    
    Now Using a System.
-         Replace 1st one with smsCode.js
-         Replace 2nd one with iftttLambda.js
+         1) Replace 1st one with smsCode.js
+         2) Replace 2nd one with iftttLambda.js
          
          *** Select the same region in your mobile App for your AWS location ***
 # Create an IFTTT account
@@ -62,6 +62,8 @@ PANIC Button using AWS IoT button and IFTTT which can trigger and make a call (N
         6. Go to the link Webhooks given above  and got to Documentation.
         
         7. Copy the URL from Documentaion by and edit your maker event to yours.
+        
+        8. Use this in your IFTTTLambda.js to edit
         
 # Adding the right policies
         
